@@ -1,5 +1,5 @@
 "Advanced" = "Avanzado";
-"app.device.jailbreak.description" = "Cualquier aplicación con \"jailbreak\" puede acceder a los datos de la cadena de claves de AlphaWallet ¡y robar tu monedero! Borra este monedero inmediatamente y restáuralo en un dispositivo seguro.";
+"app.device.jailbreak.description" = "Cualquier aplicación con \"jailbreak\" puede acceder a los datos de la cadena de claves de Prophecy Wallet ¡y robar tu monedero! Borra este monedero inmediatamente y restáuralo en un dispositivo seguro.";
 "app.device.jailbreak.title" = "SEGURIDAD DEL DISPOSITIVO COMPROMETIDA";
 "Done" = "Hecho";
 "Cancel" = "Cancelar";
@@ -190,7 +190,7 @@
 "welldone.description.label.text" = "¡Ayúdanos a crecer compartiendo esta aplicación con tus amigos!";
 "welldone.navigation.title" = "¡Gracias!";
 "welldone.share.label.text" = "Compartir";
-"welldone.viewmodel.sharing.text" = "Echa un vistazo a AlphaWallet - El primer monedero criptográfico móvil que puede interactuar con contratos inteligentes para llevar a cabo casos de uso en el mundo real.";
+"welldone.viewmodel.sharing.text" = "Echa un vistazo a Prophecy Wallet - El primer monedero criptográfico móvil que puede interactuar con contratos inteligentes para llevar a cabo casos de uso en el mundo real.";
 "browser.home.button.title" = "Inicio";
 "browser.reload.button.title" = "Volver a cargar";
 "browser.addbookmark.button.title" = "Añadir a Mis marcadores";
@@ -306,7 +306,7 @@
 "a.help.assetDefinitionOverrides.title" = "Sustituciones de TokenScript";
 "a.console.title" = "Consola";
 "a.help.contact.footer.button.title" = "¿Sigues necesitando ayuda? Contacta con nosotros";
-"a.help.contact.email.subject" = "Ayuda/Comentarios de AlphaWallet";
+"a.help.contact.email.subject" = "Ayuda/Comentarios de Prophecy Wallet";
 "a.help.contact.email.helpfulToDevelopers" = "Información útil para desarrolladores:";
 "a.help.contact.email.iosVersion" = "Versión de iOS: %@";
 "a.help.contact.email.deviceModel" = "Modelo del dispositivo: %@";
@@ -413,7 +413,7 @@
 "photos" = "Explorar";
 "light" = "Luz";
 "qrCode.title" = "Apunta la cámara al código QR";
-"tokenScript.notSupportedSchema.error" = "Actualiza AlphaWallet para poder utilizar este archivo de TokenScript";
+"tokenScript.notSupportedSchema.error" = "Actualiza Prophecy Wallet para poder utilizar este archivo de TokenScript";
 "tokenScript.moveFile.error" = "Error moving asset definition file from %@ to: %@: %@";
 "TokenScript.verifying" = "Verificando...";
 "TokenScript.showErrors" = "Mostrar errores";
@@ -422,7 +422,7 @@
 "TokenScript.type2.conflictingFiles" = "Archivos de TokenScript en conflicto";
 "TokenScript.type2.oldSchemaVersion" = "Versión antigua de TokenScript";
 "TokenScript.type2.invalidSignature" = "Firma no válida";
-"gettingStarted.subtitle" = "Bienvenido a AlphaWallet";
+"gettingStarted.subtitle" = "Bienvenido a Prophecy Wallet";
 "gettingStarted.newWallet" = "Crear un monedero nuevo";
 "gettingStarted.alreadyHaveWallet" = "Ya tengo un monedero:";
 "backup.prompt.title" = "¡No has hecho una copia de seguridad de tu monedero!";
@@ -449,14 +449,14 @@
 "keystore.accessKey.nonHd.lock" = "Para bloquear tu clave privada y aumentar la seguridad";
 "keystore.lock.wallet.seed.title" = "Bloquea tu frase semilla para aumentar la seguridad";
 "keystore.lock.wallet.privateKey.title" = "Bloquea tu clave privada para aumentar la seguridad";
-"keystore.lock.wallet.seed.description" = "La seguridad de AlphaWallet se ha mejorado al máximo. Bloquea tu frase semilla mediante biometría";
-"keystore.lock.wallet.privateKey.description" = "La seguridad de AlphaWallet se ha mejorado al máximo. Bloquea tu clave privada mediante biometría";
+"keystore.lock.wallet.seed.description" = "La seguridad de Prophecy Wallet se ha mejorado al máximo. Bloquea tu frase semilla mediante biometría";
+"keystore.lock.wallet.privateKey.description" = "La seguridad de Prophecy Wallet se ha mejorado al máximo. Bloquea tu clave privada mediante biometría";
 "keystore.lock.wallet.seed.button" = "Bloquear frase semilla";
 "keystore.lock.wallet.privateKey.button" = "Bloquear clave privada";
 "wallet.security.level.red" = "¡HAZ UNA COPIA DE SEGURIDAD AHORA!";
 "wallet.security.level.orange" = "NO BLOQUEADO";
 "wallet.security.level.green" = "100% SEGURO";
-"wallets.showSeedPhrase.subtitle.error" = "No compartas tu copia de seguridad. Los miembros del equipo de AlphaWallet nunca te la pedirán.";
+"wallets.showSeedPhrase.subtitle.error" = "No compartas tu copia de seguridad. Los miembros del equipo de Prophecy Wallet nunca te la pedirán.";
 "token.transactionConfirmation.gas.title" = "Speed (Gas)";
 "token.transactionConfirmation.contract.title" = "Contract";
 "token.transactionConfirmation.function.title" = "Function";
@@ -507,7 +507,7 @@
 "transactionConfiguration.gasPrice.tooHigh.long" = "High Gas Price Warning!";
 "transactionConfiguration.gasPrice.tooLow.long" = "Gas Price Might Be Too Low";
 
-"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. AlphaWallet uses gasnow.org";
+"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. Prophecy Wallet uses gasnow.org";
 "transactionConfiguration.gasPrice.tooLow.description" = "Gas price is set below the 'slow' speed. Your transaction may take a long time to be written or may never be written.";
 "transactionConfiguration.gasPrice.congested.description" = "The Ethereum blockchain network is very congested now. Fees might be higher than usual.
 You can check the latest gas price on gasnow.org";

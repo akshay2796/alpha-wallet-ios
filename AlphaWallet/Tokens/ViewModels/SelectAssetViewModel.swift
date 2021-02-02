@@ -16,7 +16,7 @@ class SelectAssetViewModel {
     lazy var filteredTokens: [TokenObject] = filteredAndSortedTokens()
 
     var headerBackgroundColor: UIColor {
-        return .white
+        return Colors.appBackground
     }
 
     var title: String {

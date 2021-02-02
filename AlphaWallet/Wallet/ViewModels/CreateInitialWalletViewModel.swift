@@ -5,7 +5,7 @@ import UIKit
 
 struct CreateInitialViewModel {
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var subtitle: String {

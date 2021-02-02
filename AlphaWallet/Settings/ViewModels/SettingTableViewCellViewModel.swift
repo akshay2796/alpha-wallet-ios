@@ -21,7 +21,7 @@ struct SettingTableViewCellViewModel {
     }
 
     var titleTextColor: UIColor {
-        return Colors.black
+        return Colors.appWhite
     }
 
     var subTitleFont: UIFont {
@@ -29,7 +29,11 @@ struct SettingTableViewCellViewModel {
     }
 
     var subTitleTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appWhite
+    }
+    
+    var backgroundColor: UIColor {
+        return Colors.appBackground
     }
 }
 

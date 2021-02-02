@@ -24,7 +24,7 @@ class WalletConnectSessionCell: UITableViewCell {
 
     func configure(viewModel: WalletConnectSessionCellViewModel) {
         selectionStyle = .default
-        backgroundColor = viewModel.backgroundColor
+        backgroundColor = Colors.appBackground
         nameLabel.font = viewModel.nameFont
         nameLabel.text = viewModel.name
     }

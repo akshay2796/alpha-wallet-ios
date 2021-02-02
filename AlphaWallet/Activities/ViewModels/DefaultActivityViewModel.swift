@@ -15,11 +15,11 @@ struct DefaultActivityViewModel {
     let activity: Activity
 
     var contentsBackgroundColor: UIColor {
-        .white
+        return Colors.appBackground
     }
 
     var backgroundColor: UIColor {
-        Colors.appBackground
+        return Colors.appBackground
     }
 
     var amount: NSAttributedString {

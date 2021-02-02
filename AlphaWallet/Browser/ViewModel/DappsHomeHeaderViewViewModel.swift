@@ -7,7 +7,7 @@ struct DappsHomeHeaderViewViewModel {
     var title: String
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var logo: UIImage? {

@@ -8,7 +8,7 @@ struct GenerateTransferMagicLinkViewControllerViewModel {
     private let assetDefinitionStore: AssetDefinitionStore
 
     var contentsBackgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
     var subtitleColor: UIColor {
         return Colors.appText

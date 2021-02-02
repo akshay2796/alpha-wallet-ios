@@ -109,19 +109,19 @@ struct ActivitiesViewModel {
     }
 
     var backgroundColor: UIColor {
-        Colors.appWhite
+        return Colors.appBackground
     }
 
     var headerBackgroundColor: UIColor {
-        GroupedTable.Color.background
+        return Colors.appBackground
     }
 
     var headerTitleTextColor: UIColor {
-        GroupedTable.Color.title
+        return Colors.appWhite
     }
 
     var headerTitleFont: UIFont {
-        Fonts.tableHeader
+        return Fonts.tableHeader
     }
 
     var numberOfSections: Int {

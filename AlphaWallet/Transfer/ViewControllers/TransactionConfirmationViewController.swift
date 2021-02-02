@@ -76,7 +76,7 @@ class TransactionConfirmationViewController: UIViewController {
     private lazy var containerView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
+        view.backgroundColor = Colors.appBackground
 
         view.addSubview(scrollView)
         view.addSubview(footerBar)
@@ -374,7 +374,7 @@ class TransactionConfirmationViewController: UIViewController {
 fileprivate struct HeaderViewModel {
     let title: String
     var backgroundColor: UIColor {
-        Colors.appBackground
+        return Colors.appBackground
     }
     var icon: UIImage? {
         return R.image.awLogoSmall()

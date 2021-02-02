@@ -72,7 +72,7 @@ class MyDappsViewController: UIViewController {
     func configure(viewModel: MyDappsViewControllerViewModel) {
         self.viewModel = viewModel
 
-        tableView.backgroundColor = Colors.appWhite
+        tableView.backgroundColor = Colors.appBackground
 
         resizeTableViewHeader()
         tableView.reloadData()

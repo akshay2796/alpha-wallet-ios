@@ -24,6 +24,7 @@ class SettingTableViewCell: UITableViewCell {
         label.setContentHuggingPriority(.required, for: .horizontal)
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
         label.clipsToBounds = false
+        label.textColor = Colors.appWhite
 
         return label
     }()
@@ -37,6 +38,7 @@ class SettingTableViewCell: UITableViewCell {
         label.setContentCompressionResistancePriority(.required, for: .horizontal)
 
         label.clipsToBounds = false
+        label.textColor = Colors.appWhite
 
         return label
     }()
@@ -47,6 +49,7 @@ class SettingTableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
         accessoryType = .disclosureIndicator
+        backgroundColor = Colors.appTintBackgroundColor
 
         let stackView = [
             titleLabel,

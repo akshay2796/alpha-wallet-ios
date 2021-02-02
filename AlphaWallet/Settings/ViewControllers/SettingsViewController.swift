@@ -72,9 +72,9 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         title = R.string.localizable.aSettingsNavigationTitle()
-        view.backgroundColor = GroupedTable.Color.background
+        view.backgroundColor = Colors.appBackground
         navigationItem.largeTitleDisplayMode = .automatic
-        tableView.backgroundColor = GroupedTable.Color.background
+        tableView.backgroundColor = Colors.appBackground
 
         if promptBackupWalletView == nil {
             hidePromptBackupWalletView()

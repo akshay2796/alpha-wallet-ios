@@ -33,7 +33,7 @@ class PassphraseView: UIView {
 
         addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.backgroundColor = .white
+        collectionView.backgroundColor = Colors.appBackground
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(R.nib.wordCollectionViewCell)

@@ -23,7 +23,7 @@ class ErrorView: UIView {
         self.insets = insets
         super.init(frame: frame)
 
-        backgroundColor = .white
+        backgroundColor = Colors.appBackground
 
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
         descriptionLabel.text = description

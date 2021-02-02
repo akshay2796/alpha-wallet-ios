@@ -72,4 +72,8 @@ extension PromptBackupWalletViewModel {
         let firstFewCharactersOfWalletAddress = walletAddress.eip55String.substring(with: Range(uncheckedBounds: (0, 4)))
         return "\(R.string.localizable.backupPromptBackupButtonTitle().uppercased()) \(firstFewCharactersOfWalletAddress)  "
     }
+    
+    var backgroundColor: UIColor {
+        return Colors.red
+    }
 }

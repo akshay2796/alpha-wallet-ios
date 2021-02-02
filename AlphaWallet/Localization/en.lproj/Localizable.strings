@@ -1,5 +1,5 @@
 "Advanced" = "Advanced";
-"app.device.jailbreak.description" = "Any 'jailbreak' app can access AlphaWallet's keychain data and steal your wallet! Wipe this wallet immediately and restore on a secure device.";
+"app.device.jailbreak.description" = "Any 'jailbreak' app can access Prophecy Wallet's keychain data and steal your wallet! Wipe this wallet immediately and restore on a secure device.";
 "app.device.jailbreak.title" = "DEVICE SECURITY COMPROMISED";
 "Done" = "Done";
 "Cancel" = "Cancel";
@@ -190,7 +190,7 @@
 "welldone.description.label.text" = "Help us grow by sharing this app with your friends!";
 "welldone.navigation.title" = "Thank you!";
 "welldone.share.label.text" = "Share";
-"welldone.viewmodel.sharing.text" = "Check out AlphaWallet - The first crypto mobile wallet which can interact with smart contracts to perform real-world use cases.";
+"welldone.viewmodel.sharing.text" = "Check out Prophecy Wallet - The first crypto mobile wallet which can interact with smart contracts to perform real-world use cases.";
 "browser.home.button.title" = "Home";
 "browser.reload.button.title" = "Reload";
 "browser.addbookmark.button.title" = "Add to My Bookmarks";
@@ -306,7 +306,7 @@
 "a.help.assetDefinitionOverrides.title" = "TokenScript Overrides";
 "a.console.title" = "Console";
 "a.help.contact.footer.button.title" = "Still need help? Contact Us";
-"a.help.contact.email.subject" = "Help/Feedback for AlphaWallet";
+"a.help.contact.email.subject" = "Help/Feedback for Prophecy Wallet";
 "a.help.contact.email.helpfulToDevelopers" = "Helpful information to developers:";
 "a.help.contact.email.iosVersion" = "iOS Version: %@";
 "a.help.contact.email.deviceModel" = "Device Model: %@";
@@ -413,7 +413,7 @@
 "photos" = "Browse";
 "light" = "Light";
 "qrCode.title" = "Point your camera on QR code";
-"tokenScript.notSupportedSchema.error" = "Please upgrade AlphaWallet to support this TokenScript file";
+"tokenScript.notSupportedSchema.error" = "Please upgrade Prophecy Wallet to support this TokenScript file";
 "tokenScript.moveFile.error" = "Error moving asset definition file from %@ to: %@: %@";
 "TokenScript.verifying" = "Verifying...";
 "TokenScript.showErrors" = "Show errors";
@@ -422,7 +422,7 @@
 "TokenScript.type2.conflictingFiles" = "Conflicting TokenScript Files";
 "TokenScript.type2.oldSchemaVersion" = "Old TokenScript Version";
 "TokenScript.type2.invalidSignature" = "Invalid Signature";
-"gettingStarted.subtitle" = "Welcome to AlphaWallet";
+"gettingStarted.subtitle" = "Welcome to Prophecy Wallet";
 "gettingStarted.newWallet" = "Create a New Wallet";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
 "backup.prompt.title" = "Your Wallet is not backed up!";
@@ -449,14 +449,14 @@
 "keystore.accessKey.nonHd.lock" = "To lock your private key to increase security";
 "keystore.lock.wallet.seed.title" = "Lock your Seed Phrase to Increase Security";
 "keystore.lock.wallet.privateKey.title" = "Lock your Private Key to Increase Security";
-"keystore.lock.wallet.seed.description" = "AlphaWallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
-"keystore.lock.wallet.privateKey.description" = "AlphaWallet security is being upgraded to the best achievable. Lock your private key with biometrics";
+"keystore.lock.wallet.seed.description" = "Prophecy Wallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
+"keystore.lock.wallet.privateKey.description" = "Prophecy Wallet security is being upgraded to the best achievable. Lock your private key with biometrics";
 "keystore.lock.wallet.seed.button" = "Lock Seed Phrase";
 "keystore.lock.wallet.privateKey.button" = "Lock Private Key";
 "wallet.security.level.red" = "BACK UP NOW!";
 "wallet.security.level.orange" = "NOT LOCKED";
 "wallet.security.level.green" = "100% SECURE";
-"wallets.showSeedPhrase.subtitle.error" = "Do not share your backup. AlphaWallet team members will not ask for it.";
+"wallets.showSeedPhrase.subtitle.error" = "Do not share your backup. Prophecy Wallet team members will not ask for it.";
 "token.transactionConfirmation.gas.title" = "Speed (Gas)";
 "token.transactionConfirmation.contract.title" = "Contract";
 "token.transactionConfirmation.function.title" = "Function";
@@ -507,7 +507,7 @@
 "transactionConfiguration.gasPrice.tooHigh.long" = "High Gas Price Warning!";
 "transactionConfiguration.gasPrice.tooLow.long" = "Gas Price Might Be Too Low";
 
-"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. AlphaWallet uses gasnow.org";
+"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. Prophecy Wallet uses gasnow.org";
 "transactionConfiguration.gasPrice.tooLow.description" = "Gas price is set below the 'slow' speed. Your transaction may take a long time to be written or may never be written.";
 "transactionConfiguration.gasPrice.congested.description" = "The Ethereum blockchain network is very congested now. Fees might be higher than usual.
 You can check the latest gas price on gasnow.org";

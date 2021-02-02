@@ -24,7 +24,7 @@ protocol TokenCardRowViewModelProtocol {
 
 extension TokenCardRowViewModelProtocol {
     var contentsBackgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var contentsCornerRadius: CGFloat {
@@ -64,7 +64,7 @@ extension TokenCardRowViewModelProtocol {
     }
 
     var stateColor: UIColor {
-        return .white
+        return Colors.appBackground
     }
 
     var subtitleFont: UIFont {

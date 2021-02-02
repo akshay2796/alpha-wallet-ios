@@ -7,7 +7,7 @@ struct ElevateWalletSecurityViewModel {
     let isHdWallet: Bool
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var title: String {

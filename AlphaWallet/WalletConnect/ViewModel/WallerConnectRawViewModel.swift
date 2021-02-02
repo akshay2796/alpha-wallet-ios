@@ -16,7 +16,7 @@ struct WallerConnectRawViewModel {
     var separatorOptions: HideSeparatorOption = .none
 
     var separatorLineColor: UIColor {
-        return R.color.mercury()!
+        return Colors.appBackground
     }
 
     var textLabelTextColor: UIColor {

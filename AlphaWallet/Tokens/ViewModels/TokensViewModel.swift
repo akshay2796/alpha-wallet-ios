@@ -23,7 +23,7 @@ class TokensViewModel {
     }()
 
     var headerBackgroundColor: UIColor {
-        return .white
+        return Colors.appBackground
     }
 
     var walletDefaultTitle: String {
@@ -31,7 +31,7 @@ class TokensViewModel {
     }
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var shouldShowBackupPromptViewHolder: Bool {

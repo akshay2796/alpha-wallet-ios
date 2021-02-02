@@ -115,7 +115,7 @@ private class Dialog: UIView {
     }
 
     func configure() {
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
 
         titleLabel.font = Fonts.regular(size: 24)
         titleLabel.textColor = .init(red: 33, green: 33, blue: 33)

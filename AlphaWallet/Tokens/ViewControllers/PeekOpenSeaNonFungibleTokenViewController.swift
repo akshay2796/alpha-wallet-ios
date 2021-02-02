@@ -34,7 +34,7 @@ class PeekOpenSeaNonFungibleTokenViewController: UIViewController {
     }
 
     func configure(viewModel: OpenSeaNonFungibleTokenCardRowViewModel) {
-        view.backgroundColor = .white
+        view.backgroundColor = Colors.appBackground
 
         tokenRowView.configure(viewModel: viewModel)
 

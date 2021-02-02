@@ -310,7 +310,7 @@ extension AddressTextField: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let borderColor = errorState.textFieldBorderColor(whileEditing: true)
         layer.borderColor = borderColor.cgColor
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
 
         dropShadow(color: borderColor, radius: DataEntry.Metric.shadowRadius)
     }

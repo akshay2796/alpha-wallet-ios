@@ -11,7 +11,7 @@ struct WelcomeViewModel {
     }
 
     var backgroundColor: UIColor {
-        return .white
+        return Colors.appBackground
     }
 
     var pageIndicatorTintColor: UIColor {

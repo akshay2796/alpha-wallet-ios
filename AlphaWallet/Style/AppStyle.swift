@@ -7,15 +7,17 @@ func applyStyle() {
     UIBarButtonItem.appearance(whenContainedInInstancesOf: [UIDocumentBrowserViewController.self]).tintColor = Colors.navigationButtonTintColor
     UIWindow.appearance().tintColor = Colors.appTint
     UITabBar.appearance().tintColor = Colors.appTint
+    UITabBar.appearance().backgroundColor = Colors.appBackground
+    UINavigationBar.appearance().backgroundColor = Colors.appBackground
     UINavigationBar.appearance().barTintColor = Colors.appBackground
     UINavigationBar.appearance().backIndicatorImage = R.image.backWhite()
     UINavigationBar.appearance().backIndicatorTransitionMaskImage = R.image.backWhite()
     UINavigationBar.appearance().titleTextAttributes = [
-        .foregroundColor: Colors.navigationTitleColor,
+        .foregroundColor: Colors.appBackground,
         .font: Fonts.semibold(size: 17) as Any
     ]
     UINavigationBar.appearance().largeTitleTextAttributes = [
-        .foregroundColor: Colors.navigationTitleColor,
+        .foregroundColor: Colors.appBackground,
         .font: Fonts.bold(size: 36) as Any,
     ]
 
@@ -25,7 +27,7 @@ func applyStyle() {
     UIBarButtonItem.appearance(whenContainedInInstancesOf: [UIToolbar.self]).tintColor = Colors.navigationButtonTintColor
 
     UIToolbar.appearance().tintColor = Colors.appTint
-
+    UIToolbar.appearance().backgroundColor = Colors.appBackground
     //Background (not needed in iOS 12.1 on simulator)
     UISearchBar.appearance().backgroundColor = Colors.appBackground
     //Cancel button
@@ -44,21 +46,21 @@ func applyStyle(viewController: UIViewController) {
 }
 
 struct Colors {
-    static let darkBlue = UIColor(hex: "3375BB")
+    static let darkBlue = UIColor.white
     static let red = UIColor(hex: "f7506c")
     static let veryLightOrange = UIColor(hex: "FFECC9")
-    static let lightGray = UIColor.lightGray
-    static let gray = UIColor.gray
-    static let darkGray = UIColor(hex: "2f2f2f")
+    static let lightGray = UIColor.white
+    static let gray = UIColor.white
+    static let darkGray = UIColor.white
     static let black = UIColor(hex: "313849")
     static let lightBlack = UIColor(hex: "313849")
-    static let appBackground = UIColor.white
-    static let appTint = R.color.azure()!
-    static let navigationTitleColor = UIColor.black
-    static let navigationButtonTintColor = R.color.mine()!
+    static let appBackground = UIColor(hex: "162035")
+    static let appTint = UIColor(hex: "FF005C")
+    static let navigationTitleColor = UIColor.white
+    static let navigationButtonTintColor = UIColor.white
     static let appWhite = UIColor.white
-    static let appText = UIColor(red: 47, green: 47, blue: 47)
-    static let appSubtitle = UIColor(red: 117, green: 117, blue: 117)
+    static let appText = UIColor.white
+    static let appSubtitle = UIColor.white
     static let appHighlightGreen = UIColor(red: 117, green: 185, blue: 67)
     static let appActionButtonGreen = UIColor(red: 105, green: 200, blue: 0)
     static let disabledActionButton = UIColor(hex: "d7ebc8")
@@ -66,10 +68,12 @@ struct Colors {
     static let appGreenContrastBackground = UIColor(red: 86, green: 153, blue: 8)
     static let appLightButtonSeparator = UIColor(red: 255, green: 255, blue: 255, alpha: 0.2)
     static let appRed = UIColor(red: 204, green: 71, blue: 65)
-    static let appGrayLabel = UIColor(red: 155, green: 155, blue: 155)
-    static let settingsSubtitle = UIColor(red: 141, green: 141, blue: 141)
+    static let appGrayLabel = UIColor.white
+    static let settingsSubtitle = UIColor.white
     static let qrCodeRectBorders = UIColor(red: 216, green: 216, blue: 216)
     static let loadingIndicatorBorder = UIColor(red: 237, green: 237, blue: 237)
+    static let appTintBackgroundColor = UIColor(hex: "152b52")
+    static let settingsHeaderBackgroundColor = UIColor(hex: "c34840")
 }
 
 struct StyleLayout {
@@ -125,7 +129,7 @@ enum GroupedTable {
 
     enum Color {
         static let title = UIColor(red: 76, green: 76, blue: 76)
-        static let background = R.color.alabaster()!
+        static let background = Colors.appBackground
         static let cellSeparator = UIColor(red: 233, green: 233, blue: 233)
     }
 }

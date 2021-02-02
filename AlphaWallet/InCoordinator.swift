@@ -462,6 +462,7 @@ class InCoordinator: NSObject, Coordinator {
 
         let tabBarController = TabBarController()
         tabBarController.tabBar.isTranslucent = false
+        tabBarController.tabBar.barTintColor = Colors.appBackground
         tabBarController.viewControllers = viewControllers
         tabBarController.delegate = self
 

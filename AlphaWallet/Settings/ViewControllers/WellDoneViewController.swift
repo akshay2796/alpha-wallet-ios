@@ -41,7 +41,7 @@ class WellDoneViewController: UIViewController {
         ].asStackView(axis: .vertical, spacing: 10, alignment: .center)
         stackView.translatesAutoresizingMaskIntoConstraints = false
 
-        view.backgroundColor = .white
+        view.backgroundColor = Colors.appBackground
         view.addSubview(stackView)
 
         NSLayoutConstraint.activate([

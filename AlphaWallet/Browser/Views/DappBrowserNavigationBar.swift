@@ -87,7 +87,7 @@ final class DappBrowserNavigationBar: UINavigationBar {
         textField.placeholder = R.string.localizable.browserUrlTextfieldPlaceholder()
         textField.keyboardType = .webSearch
         textField.borderStyle = .none
-        textField.backgroundColor = .white
+        textField.backgroundColor = Colors.appBackground
         textField.layer.borderWidth = DataEntry.Metric.borderThickness
         textField.backgroundColor = DataEntry.Color.searchTextFieldBackground
         textField.layer.borderColor = UIColor.clear.cgColor

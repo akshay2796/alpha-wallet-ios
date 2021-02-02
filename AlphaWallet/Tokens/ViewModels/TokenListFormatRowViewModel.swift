@@ -6,7 +6,7 @@ struct TokenListFormatRowViewModel {
     let tokenHolder: TokenHolder
 
     var contentsBackgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var titleColor: UIColor {

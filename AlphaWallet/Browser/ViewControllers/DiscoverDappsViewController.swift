@@ -162,7 +162,7 @@ private class SectionHeaderView: UIView {
     }
 
     func configure() {
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
 
         label.textColor = UIColor(red: 77, green: 77, blue: 77)
         label.font = Fonts.regular(size: 10)

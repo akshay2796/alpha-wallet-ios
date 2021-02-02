@@ -43,7 +43,7 @@ struct TokensCardViewControllerHeaderViewModel {
     }
 
     var backgroundColor: UIColor {
-        return Screen.TokenCard.Color.background
+        return Colors.appBackground
     }
 
     var contentsBackgroundColor: UIColor {

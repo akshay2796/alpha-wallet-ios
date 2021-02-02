@@ -90,7 +90,7 @@ final class BrowserViewController: UIViewController {
 
             errorView.anchorsConstraint(to: webView),
         ])
-        view.backgroundColor = .white
+        view.backgroundColor = Colors.appBackground
 
         estimatedProgressObservation = webView.observe(\.estimatedProgress) { [weak self] webView, _ in
             guard let strongSelf = self else { return }

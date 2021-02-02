@@ -14,18 +14,18 @@ struct SettingViewHeaderViewModel {
     var showTopSeparator: Bool = true
 
     var titleTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
 
     var detailsTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
     var detailsTextFont: UIFont {
         return Fonts.regular(size: 13)
     }
 
     var backgroundColor: UIColor {
-        return R.color.alabaster()!
+        return Colors.red
     }
 
     var separatorColor: UIColor {

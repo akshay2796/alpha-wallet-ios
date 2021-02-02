@@ -7,7 +7,7 @@ struct WalletConnectSessionCellViewModel {
     let server: RPCServer
 
     var backgroundColor: UIColor {
-        Colors.appBackground
+        return Colors.appBackground
     }
 
     var nameFont: UIFont {

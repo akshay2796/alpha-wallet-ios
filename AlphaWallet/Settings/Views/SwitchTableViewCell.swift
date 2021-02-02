@@ -29,6 +29,7 @@ class SwitchTableViewCell: UITableViewCell {
     private let switchView: UISwitch = {
         let switchView = UISwitch()
         switchView.translatesAutoresizingMaskIntoConstraints = false
+        switchView.thumbTintColor = Colors.appTint
         return switchView
     }()
     
@@ -46,6 +47,7 @@ class SwitchTableViewCell: UITableViewCell {
         
         selectionStyle = .none
         accessoryType = .none
+        backgroundColor = Colors.appTintBackgroundColor
         
         contentView.addSubview(titleLabel)
         contentView.addSubview(iconImageView)

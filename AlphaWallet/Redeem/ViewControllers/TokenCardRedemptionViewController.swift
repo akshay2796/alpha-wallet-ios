@@ -54,7 +54,7 @@ class TokenCardRedemptionViewController: UIViewController, TokenVerifiableStatus
 
         let imageHolder = UIView()
         imageHolder.translatesAutoresizingMaskIntoConstraints = false
-        imageHolder.backgroundColor = Colors.appWhite
+        imageHolder.backgroundColor = Colors.appBackground
         imageHolder.cornerRadius = Metrics.CornerRadius.box
         imageHolder.addSubview(imageView)
 

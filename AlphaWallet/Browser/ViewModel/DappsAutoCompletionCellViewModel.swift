@@ -8,7 +8,7 @@ struct DappsAutoCompletionCellViewModel {
     let keyword: String
 
     var backgroundColor: UIColor {
-        return UIColor(red: 244, green: 244, blue: 244)
+        return Colors.appBackground
     }
 
     var name: NSAttributedString {

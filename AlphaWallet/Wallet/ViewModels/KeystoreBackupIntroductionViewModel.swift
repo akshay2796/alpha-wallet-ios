@@ -5,7 +5,7 @@ import UIKit
 
 struct KeystoreBackupIntroductionViewModel {
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var title: String {

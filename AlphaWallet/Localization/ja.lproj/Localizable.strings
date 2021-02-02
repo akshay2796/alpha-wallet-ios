@@ -1,5 +1,5 @@
 "Advanced" = "高度";
-"app.device.jailbreak.description" = "あらゆる脱獄アプリは AlphaWallet のキーチェーン データにアクセスしてデータを盗むことができます! このウォレットを直ちにワイプして安全なデバイスに復元してください。";
+"app.device.jailbreak.description" = "あらゆる脱獄アプリは Prophecy Wallet のキーチェーン データにアクセスしてデータを盗むことができます! このウォレットを直ちにワイプして安全なデバイスに復元してください。";
 "app.device.jailbreak.title" = "デバイスのセキュリティが危険にさらされています";
 "Done" = "完了";
 "Cancel" = "キャンセル";
@@ -190,7 +190,7 @@
 "welldone.description.label.text" = "友達とこのアプリをシェアして、アプリの成長をご支援ください!";
 "welldone.navigation.title" = "ありがとうございます!";
 "welldone.share.label.text" = "シェア";
-"welldone.viewmodel.sharing.text" = "AlphaWallet をチェックしてください- 現実の世界のユースケースを実行するスマート契約とのインタラクションを行える、最初の暗号モバイル ウォレット。";
+"welldone.viewmodel.sharing.text" = "Prophecy Wallet をチェックしてください- 現実の世界のユースケースを実行するスマート契約とのインタラクションを行える、最初の暗号モバイル ウォレット。";
 "browser.home.button.title" = "ホーム";
 "browser.reload.button.title" = "再読み込み";
 "browser.addbookmark.button.title" = "Add to My Bookmarks";
@@ -306,7 +306,7 @@
 "a.help.assetDefinitionOverrides.title" = "TokenScript Overrides";
 "a.console.title" = "Console";
 "a.help.contact.footer.button.title" = "まだヘルプが必要ですか? 当社にお問い合わせください";
-"a.help.contact.email.subject" = "AlphaWallet のヘルプ/フィードバック";
+"a.help.contact.email.subject" = "Prophecy Wallet のヘルプ/フィードバック";
 "a.help.contact.email.helpfulToDevelopers" = "開発者に役立つ情報:";
 "a.help.contact.email.iosVersion" = "iOS バージョン: %@";
 "a.help.contact.email.deviceModel" = "デバイスのモデル: %@";
@@ -413,7 +413,7 @@
 "light" = "Light";
 "qrCode.title" = "Point your camera on QR code";
 "a.claim.token.failed.serverDown" = "a.claim.token.failed.serverDown";
-"tokenScript.notSupportedSchema.error" = "Please upgrade AlphaWallet to support this TokenScript file";
+"tokenScript.notSupportedSchema.error" = "Please upgrade Prophecy Wallet to support this TokenScript file";
 "tokenScript.moveFile.error" = "Error moving asset definition file from %@ to: %@: %@";
 "TokenScript.verifying" = "Verifying...";
 "TokenScript.showErrors" = "Show errors";
@@ -422,7 +422,7 @@
 "TokenScript.type2.conflictingFiles" = "Conflicting TokenScript Files";
 "TokenScript.type2.oldSchemaVersion" = "Old TokenScript Version";
 "TokenScript.type2.invalidSignature" = "Invalid Signature";
-"gettingStarted.subtitle" = "Welcome to AlphaWallet";
+"gettingStarted.subtitle" = "Welcome to Prophecy Wallet";
 "gettingStarted.newWallet" = "Create a New Wallet";
 "gettingStarted.alreadyHaveWallet" = "I already have a wallet:";
 "backup.prompt.title" = "Your Wallet is not backed up!";
@@ -449,14 +449,14 @@
 "keystore.accessKey.nonHd.lock" = "To lock your private key to increase security";
 "keystore.lock.wallet.seed.title" = "Lock your Seed Phrase to Increase Security";
 "keystore.lock.wallet.privateKey.title" = "Lock your Private Key to Increase Security";
-"keystore.lock.wallet.seed.description" = "AlphaWallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
-"keystore.lock.wallet.privateKey.description" = "AlphaWallet security is being upgraded to the best achievable. Lock your private key with biometrics";
+"keystore.lock.wallet.seed.description" = "Prophecy Wallet security is being upgraded to the best achievable. Lock your seed phrase with biometrics";
+"keystore.lock.wallet.privateKey.description" = "Prophecy Wallet security is being upgraded to the best achievable. Lock your private key with biometrics";
 "keystore.lock.wallet.seed.button" = "Lock Seed Phrase";
 "keystore.lock.wallet.privateKey.button" = "Lock Private Key";
 "wallet.security.level.red" = "BACK UP NOW!";
 "wallet.security.level.orange" = "NOT LOCKED";
 "wallet.security.level.green" = "100% SECURE";
-"wallets.showSeedPhrase.subtitle.error" = "バックアップを共有しないでください。 AlphaWalletチームのメンバーはそれを要求しません。";
+"wallets.showSeedPhrase.subtitle.error" = "バックアップを共有しないでください。 Prophecy Walletチームのメンバーはそれを要求しません。";
 "token.transactionConfirmation.gas.title" = "Speed (Gas)";
 "token.transactionConfirmation.contract.title" = "Contract";
 "token.transactionConfirmation.function.title" = "Function";
@@ -507,7 +507,7 @@
 "transactionConfiguration.gasPrice.tooHigh.long" = "High Gas Price Warning!";
 "transactionConfiguration.gasPrice.tooLow.long" = "Gas Price Might Be Too Low";
 
-"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. AlphaWallet uses gasnow.org";
+"transactionConfiguration.gasPrice.tooHigh.description" = "You set a really high gas price. Please make sure this is not a mistake. Prophecy Wallet uses gasnow.org";
 "transactionConfiguration.gasPrice.tooLow.description" = "Gas price is set below the 'slow' speed. Your transaction may take a long time to be written or may never be written.";
 "transactionConfiguration.gasPrice.congested.description" = "The Ethereum blockchain network is very congested now. Fees might be higher than usual.
 You can check the latest gas price on gasnow.org";

@@ -76,7 +76,7 @@ final class BrowserHistoryViewController: UIViewController {
     }
 
     func configure(viewModel: HistoriesViewModel) {
-        tableView.backgroundColor = Colors.appWhite
+        tableView.backgroundColor = Colors.appBackground
 
         resizeTableViewHeader()
         tableView.reloadData()

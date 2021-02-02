@@ -89,7 +89,7 @@ struct TransactionCellViewModel {
     var contentsBackgroundColor: UIColor {
         switch transaction.state {
         case .completed, .error, .unknown, .failed:
-            return .white
+            return Colors.appBackground
         case .pending:
             return Colors.veryLightOrange
         }

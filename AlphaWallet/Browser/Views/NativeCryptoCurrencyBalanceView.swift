@@ -70,7 +70,7 @@ class NativeCryptoCurrencyBalanceView: UIView {
     }
 
     private func configure() {
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
         alpha = 0.7
         cornerRadius = 3
 

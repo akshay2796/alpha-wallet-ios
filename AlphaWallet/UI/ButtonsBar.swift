@@ -110,7 +110,7 @@ class ButtonsBarBackgroundView: UIView {
         addSubview(separatorLine)
         addSubview(buttonsBar)
         translatesAutoresizingMaskIntoConstraints = false
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
 
         NSLayoutConstraint.activate([
             separatorLine.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -362,7 +362,7 @@ private struct ButtonsBarViewModel {
     )
 
     static let whiteButton = ButtonsBarViewModel(
-        buttonBackgroundColor: Colors.appWhite,
+        buttonBackgroundColor: Colors.appBackground,
         disabledButtonBackgroundColor: Colors.appWhite,
         disabledButtonBorderColor: R.color.azure()!.withAlphaComponent(0.3),
         disabledButtonTitleColor: R.color.azure()!.withAlphaComponent(0.3)

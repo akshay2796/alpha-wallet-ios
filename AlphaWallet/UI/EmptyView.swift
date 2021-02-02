@@ -23,7 +23,7 @@ class EmptyView: UIView {
         self.onRetry = onRetry
         super.init(frame: frame)
 
-        backgroundColor = .white
+        backgroundColor = Colors.appBackground
 
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.text = title

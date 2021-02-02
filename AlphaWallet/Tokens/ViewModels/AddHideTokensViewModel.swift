@@ -47,7 +47,7 @@ class AddHideTokensViewModel {
     }
 
     var backgroundColor: UIColor {
-        GroupedTable.Color.background
+        return Colors.appBackground
     }
 
     var numberOfSections: Int {

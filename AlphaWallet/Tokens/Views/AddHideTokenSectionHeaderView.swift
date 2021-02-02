@@ -45,8 +45,8 @@ class AddHideTokenSectionHeaderView: UITableViewHeaderFooterView {
     }
     
     private func setupViews() {
-        backgroundColor = .white
-        contentView.backgroundColor = .white
+        backgroundColor = Colors.appBackground
+        contentView.backgroundColor = Colors.appBackground
         addSubview(titleLabel)
         addSubview(separatorView)
         

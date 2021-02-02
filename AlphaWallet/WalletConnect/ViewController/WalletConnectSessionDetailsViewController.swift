@@ -30,7 +30,7 @@ class WalletConnectSessionViewController: UIViewController {
     private let roundedBackground = RoundedBackground()
     private let separatorList: UIView = {
         let view = UIView()
-        view.backgroundColor = R.color.mercury()
+        view.backgroundColor = Colors.appBackground
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()

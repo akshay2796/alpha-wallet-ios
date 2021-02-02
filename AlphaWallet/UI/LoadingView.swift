@@ -21,7 +21,7 @@ class LoadingView: UIView {
         self.insets = insets
         super.init(frame: frame)
 
-        backgroundColor = .white
+        backgroundColor = Colors.appBackground
 
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = message

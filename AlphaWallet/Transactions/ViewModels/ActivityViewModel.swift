@@ -15,7 +15,7 @@ struct ActivityViewModel {
     }
 
     var backgroundColor: UIColor {
-        Screen.TokenCard.Color.background
+        return Screen.TokenCard.Color.background
     }
 
     var titleTextColor: UIColor {

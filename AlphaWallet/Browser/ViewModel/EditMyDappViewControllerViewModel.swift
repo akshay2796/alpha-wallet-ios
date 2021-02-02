@@ -27,7 +27,7 @@ struct EditMyDappViewControllerViewModel {
     }
 
     var imageBackgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var imagePlaceholder: UIImage {

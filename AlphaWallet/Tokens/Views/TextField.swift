@@ -250,7 +250,7 @@ extension TextField: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         let borderColor = status.textFieldBorderColor(whileEditing: true)
         layer.borderColor = borderColor.cgColor
-        backgroundColor = Colors.appWhite
+        backgroundColor = Colors.appBackground
 
         dropShadow(color: borderColor, radius: DataEntry.Metric.shadowRadius)
     }

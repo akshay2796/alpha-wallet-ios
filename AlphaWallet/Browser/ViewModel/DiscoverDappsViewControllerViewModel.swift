@@ -10,6 +10,6 @@ struct DiscoverDappsViewControllerViewModel {
     var dapps = Dapps.masterList
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 }

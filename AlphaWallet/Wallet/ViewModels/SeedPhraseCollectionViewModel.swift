@@ -11,7 +11,7 @@ struct SeedPhraseCollectionViewModel {
     let shouldShowSequenceNumber: Bool
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var seedPhraseWordCount: Int {

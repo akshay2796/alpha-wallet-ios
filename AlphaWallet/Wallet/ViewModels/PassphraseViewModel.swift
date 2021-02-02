@@ -10,7 +10,7 @@ struct PassphraseViewModel {
     }
 
     var backgroundColor: UIColor {
-        return .white
+        return Colors.appBackground
     }
 
     var rememberPassphraseText: String {

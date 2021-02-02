@@ -25,7 +25,7 @@ struct OpenSeaNonFungibleTokenCardRowViewModel {
     }
 
     var contentsBackgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var bigImageBackgroundColor: UIColor {

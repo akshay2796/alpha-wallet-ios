@@ -29,7 +29,7 @@ enum ButtonStyle: Int {
     var backgroundColor: UIColor {
         switch self {
         case .solid, .squared: return Colors.appTint
-        case .border, .borderless: return .white
+        case .border, .borderless: return Colors.appBackground
         case .system: return .clear
         }
     }

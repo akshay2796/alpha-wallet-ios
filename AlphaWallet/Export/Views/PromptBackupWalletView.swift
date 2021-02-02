@@ -56,7 +56,7 @@ class PromptBackupWalletView: UIView {
     }
 
     func configure() {
-        backgroundColor = viewModel.backgroundColor
+        backgroundColor = Colors.settingsHeaderBackgroundColor
         cornerRadius = viewModel.cornerRadius
 
         titleLabel.font = viewModel.titleFont
@@ -75,10 +75,12 @@ class PromptBackupWalletView: UIView {
 
         backupButton.tintColor = viewModel.backupButtonTitleColor
         backupButton.titleLabel?.font = viewModel.backupButtonTitleFont
-        backupButton.setBackgroundColor(viewModel.backupButtonBackgroundColor, forState: .normal)
+        backupButton.setBackgroundColor(Colors.settingsHeaderBackgroundColor, forState: .normal)
         backupButton.setTitleColor(viewModel.backupButtonTitleColor, for: .normal)
         backupButton.setTitle(viewModel.backupButtonTitle, for: .normal)
         backupButton.setImage(viewModel.backupButtonImage, for: .normal)
+        backupButton.borderWidth = CGFloat(1)
+        backupButton.borderColor = Colors.appWhite
         backupButton.contentEdgeInsets = viewModel.backupButtonContentEdgeInsets
         swapButtonTextAndImage(backupButton)
     }

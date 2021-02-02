@@ -15,7 +15,7 @@ struct StatusViewControllerViewModel {
 	var state: State
 
 	var contentsBackgroundColor: UIColor {
-		return Colors.appWhite
+		return Colors.appBackground
 	}
 	var image: UIImage? {
 		switch state {

@@ -15,15 +15,15 @@ struct DefaultActivityCellViewModel {
     let activity: Activity
 
     var contentsBackgroundColor: UIColor {
-        .white
+        return Colors.appBackground
     }
 
     var backgroundColor: UIColor {
-        Colors.appBackground
+        return Colors.appBackground
     }
 
     var titleTextColor: UIColor {
-        R.color.black()!
+        return Colors.appWhite
     }
 
     var title: NSAttributedString {

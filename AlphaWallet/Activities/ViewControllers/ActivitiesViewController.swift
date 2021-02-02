@@ -33,7 +33,7 @@ class ActivitiesViewController: UIViewController {
 
         title = R.string.localizable.activityTabbarItemTitle()
 
-        view.backgroundColor = self.viewModel.backgroundColor
+        view.backgroundColor = Colors.appBackground
 
         tableView.register(ActivityViewCell.self)
         tableView.register(DefaultActivityItemViewCell.self)
@@ -63,7 +63,7 @@ class ActivitiesViewController: UIViewController {
         loadingView = LoadingView()
         //TODO move into StateViewModel once this change is global
         if let loadingView = loadingView as? LoadingView {
-            loadingView.backgroundColor = Colors.appGrayLabel
+            loadingView.backgroundColor = Colors.appBackground
             loadingView.label.textColor = Colors.appWhite
             loadingView.loadingIndicator.color = Colors.appWhite
             loadingView.label.font = Fonts.regular(size: 18)

@@ -7,7 +7,7 @@ struct MyDappCellViewModel {
     let dapp: Bookmark
 
     var backgroundColor: UIColor {
-        return Colors.appWhite
+        return Colors.appBackground
     }
 
     var imageUrl: URL? {
