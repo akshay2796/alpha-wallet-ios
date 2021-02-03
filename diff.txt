@@ -1,0 +1,620 @@
+diff --git a/AlphaWallet.xcodeproj/project.pbxproj b/AlphaWallet.xcodeproj/project.pbxproj
+index 7f527ace..bf5e1b74 100644
+--- a/AlphaWallet.xcodeproj/project.pbxproj
++++ b/AlphaWallet.xcodeproj/project.pbxproj
+@@ -799,6 +799,7 @@
+ 		CCA4FE381FD428B300749AE4 /* JailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */; };
+ 		CCA4FE3A1FD42B4100749AE4 /* FakeJailbreakChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */; };
+ 		CCCD74FD1FD2D38D004A087D /* CheckDeviceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */; };
++		D12638AF25CB110600FD0BD6 /* logo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D12638AE25CB110600FD0BD6 /* logo@3x.png */; };
+ /* End PBXBuildFile section */
+ 
+ /* Begin PBXContainerItemProxy section */
+@@ -1650,6 +1651,7 @@
+ 		CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakChecker.swift; sourceTree = "<group>"; };
+ 		CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeJailbreakChecker.swift; sourceTree = "<group>"; };
+ 		CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDeviceCoordinator.swift; sourceTree = "<group>"; };
++		D12638AE25CB110600FD0BD6 /* logo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo@3x.png"; sourceTree = "<group>"; };
+ 		E36AB2DC7832A980726A4AB1 /* Pods_AlphaWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+ /* End PBXFileReference section */
+ 
+@@ -1717,6 +1719,7 @@
+ 			isa = PBXGroup;
+ 			children = (
+ 				2912CCF71F6A830700C6CBE3 /* AlphaWallet */,
++				D12638AE25CB110600FD0BD6 /* logo@3x.png */,
+ 				2912CD0E1F6A830700C6CBE3 /* AlphaWalletTests */,
+ 				2912CD191F6A830700C6CBE3 /* AlphaWalletUITests */,
+ 				878EE8EC255ADA49000210DE /* AlphaWalletShare */,
+@@ -4201,6 +4204,7 @@
+ 				771AA966200D5F1900D25403 /* WordCollectionViewCell.xib in Resources */,
+ 				C88033122055034E00D73D6F /* sellInfo.html in Resources */,
+ 				C868C536205409160059672B /* redeemInfo.html in Resources */,
++				D12638AF25CB110600FD0BD6 /* logo@3x.png in Resources */,
+ 				C876FF7A204A79D300B7D0EA /* SIL Open Font License.txt in Resources */,
+ 				C880330C2054371500D73D6F /* non_asset_catalog_redemption_location.png in Resources */,
+ 				C876FF79204A79D300B7D0EA /* README.md in Resources */,
+diff --git a/AlphaWallet/Browser/ViewModel/BrowserHistoryCellViewModel.swift b/AlphaWallet/Browser/ViewModel/BrowserHistoryCellViewModel.swift
+index 91ec5401..c8cc34d8 100644
+--- a/AlphaWallet/Browser/ViewModel/BrowserHistoryCellViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/BrowserHistoryCellViewModel.swift
+@@ -35,7 +35,7 @@ struct BrowserHistoryCellViewModel {
+     }
+ 
+     var nameColor: UIColor? {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var urlColor: UIColor? {
+diff --git a/AlphaWallet/Browser/ViewModel/DappButtonViewModel.swift b/AlphaWallet/Browser/ViewModel/DappButtonViewModel.swift
+index de6f8577..8d54e3c0 100644
+--- a/AlphaWallet/Browser/ViewModel/DappButtonViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/DappButtonViewModel.swift
+@@ -9,7 +9,7 @@ struct DappButtonViewModel {
+     }
+ 
+     var textColor: UIColor? {
+-        return .init(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var imageForEnabledMode: UIImage? {
+diff --git a/AlphaWallet/Browser/ViewModel/DappViewCellViewModel.swift b/AlphaWallet/Browser/ViewModel/DappViewCellViewModel.swift
+index 28e18cb5..6e5b0a70 100644
+--- a/AlphaWallet/Browser/ViewModel/DappViewCellViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/DappViewCellViewModel.swift
+@@ -44,7 +44,7 @@ class DappViewCellViewModel {
+     }
+ 
+     var titleColor: UIColor {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var titleFont: UIFont {
+@@ -52,7 +52,7 @@ class DappViewCellViewModel {
+     }
+ 
+     var domainNameColor: UIColor {
+-        return Colors.appBackground
++        return Colors.appText
+     }
+ 
+     var domainNameFont: UIFont {
+diff --git a/AlphaWallet/Browser/ViewModel/DappsAutoCompletionCellViewModel.swift b/AlphaWallet/Browser/ViewModel/DappsAutoCompletionCellViewModel.swift
+index 7ea77bc6..5d06b257 100644
+--- a/AlphaWallet/Browser/ViewModel/DappsAutoCompletionCellViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/DappsAutoCompletionCellViewModel.swift
+@@ -35,10 +35,10 @@ struct DappsAutoCompletionCellViewModel {
+     }
+ 
+     private var nameColor: UIColor? {
+-        return UIColor(red: 55, green: 55, blue: 55)
++        return Colors.appText
+     }
+ 
+     var descriptionColor: UIColor? {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ }
+diff --git a/AlphaWallet/Browser/ViewModel/DiscoverDappCellViewModel.swift b/AlphaWallet/Browser/ViewModel/DiscoverDappCellViewModel.swift
+index d0c658cf..1d11fd1a 100644
+--- a/AlphaWallet/Browser/ViewModel/DiscoverDappCellViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/DiscoverDappCellViewModel.swift
+@@ -52,11 +52,11 @@ struct DiscoverDappCellViewModel {
+     }
+ 
+     var nameColor: UIColor? {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var descriptionColor: UIColor? {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var addRemoveButtonFont: UIFont {
+diff --git a/AlphaWallet/Browser/ViewModel/EditMyDappViewControllerViewModel.swift b/AlphaWallet/Browser/ViewModel/EditMyDappViewControllerViewModel.swift
+index 206dd5c4..378349de 100644
+--- a/AlphaWallet/Browser/ViewModel/EditMyDappViewControllerViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/EditMyDappViewControllerViewModel.swift
+@@ -47,7 +47,7 @@ struct EditMyDappViewControllerViewModel {
+     }
+ 
+     var titleColor: UIColor {
+-        return .init(red: 71, green: 71, blue: 71)
++        return Colors.appText
+     }
+ 
+     var titleFont: UIFont {
+@@ -59,7 +59,7 @@ struct EditMyDappViewControllerViewModel {
+     }
+ 
+     var urlColor: UIColor {
+-        return .init(red: 71, green: 71, blue: 71)
++        return Colors.appText
+     }
+ 
+     var urlFont: UIFont {
+diff --git a/AlphaWallet/Browser/ViewModel/MyDappCellViewModel.swift b/AlphaWallet/Browser/ViewModel/MyDappCellViewModel.swift
+index a91e32d3..3b2d1abd 100644
+--- a/AlphaWallet/Browser/ViewModel/MyDappCellViewModel.swift
++++ b/AlphaWallet/Browser/ViewModel/MyDappCellViewModel.swift
+@@ -35,11 +35,11 @@ struct MyDappCellViewModel {
+     }
+ 
+     var nameColor: UIColor? {
+-        return UIColor(red: 77, green: 77, blue: 77)
++        return Colors.appText
+     }
+ 
+     var domainNameColor: UIColor? {
+-        return Colors.appTint
++        return Colors.appText
+     }
+ 
+     var addRemoveButtonFont: UIFont {
+diff --git a/AlphaWallet/Browser/Views/BrowserErrorView.swift b/AlphaWallet/Browser/Views/BrowserErrorView.swift
+index 9e6755a9..7d15d601 100644
+--- a/AlphaWallet/Browser/Views/BrowserErrorView.swift
++++ b/AlphaWallet/Browser/Views/BrowserErrorView.swift
+@@ -14,7 +14,7 @@ final class BrowserErrorView: UIView {
+     private lazy var textLabel: UILabel = {
+         let label = UILabel()
+         label.numberOfLines = 0
+-        label.textColor = Colors.gray
++        label.textColor = Colors.appText
+         label.font = UIFont.systemFont(ofSize: 18)
+         label.translatesAutoresizingMaskIntoConstraints = false
+         return label
+diff --git a/AlphaWallet/Browser/Views/DappBrowserNavigationBar.swift b/AlphaWallet/Browser/Views/DappBrowserNavigationBar.swift
+index 6fd27a86..4aed31ff 100644
+--- a/AlphaWallet/Browser/Views/DappBrowserNavigationBar.swift
++++ b/AlphaWallet/Browser/Views/DappBrowserNavigationBar.swift
+@@ -184,7 +184,7 @@ final class DappBrowserNavigationBar: UINavigationBar {
+         changeServerButton.tintColor = color
+         moreButton.imageView?.tintColor = color
+ 
+-        domainNameLabel.textColor = color
++        domainNameLabel.textColor = Colors.appText
+         domainNameLabel.textAlignment = .center
+ 
+         changeServerButton.setTitle(server.name, for: .normal)
+diff --git a/AlphaWallet/InCoordinator.swift b/AlphaWallet/InCoordinator.swift
+index 1b95eed7..741d8415 100644
+--- a/AlphaWallet/InCoordinator.swift
++++ b/AlphaWallet/InCoordinator.swift
+@@ -846,8 +846,6 @@ extension InCoordinator: TokensCoordinatorDelegate {
+ 
+     private func open(url: URL, onServer server: RPCServer) {
+         guard let dappBrowserCoordinator = dappBrowserCoordinator else { return }
+-
+-
+         //Server shouldn't be disabled since the action is selected
+         guard config.enabledServers.contains(server) else { return }
+         showTab(.browser)
+diff --git a/AlphaWallet/LaunchScreen.storyboard b/AlphaWallet/LaunchScreen.storyboard
+index b5e0e466..6a34e421 100644
+--- a/AlphaWallet/LaunchScreen.storyboard
++++ b/AlphaWallet/LaunchScreen.storyboard
+@@ -22,7 +22,7 @@
+                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                 <nil key="highlightedColor"/>
+                             </label>
+-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="awLogoSmall" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-1p-Rg3">
++                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-1p-Rg3">
+                                 <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+@@ -43,6 +43,6 @@
+         </scene>
+     </scenes>
+     <resources>
+-        <image name="awLogoSmall" width="32" height="32"/>
++        <image name="logo.png" width="278.33334350585938" height="278.33334350585938"/>
+     </resources>
+ </document>
+diff --git a/AlphaWallet/Localization/en.lproj/Localizable.strings b/AlphaWallet/Localization/en.lproj/Localizable.strings
+index 989a01a7..f1ecfb95 100644
+--- a/AlphaWallet/Localization/en.lproj/Localizable.strings
++++ b/AlphaWallet/Localization/en.lproj/Localizable.strings
+@@ -196,7 +196,7 @@
+ "browser.addbookmark.button.title" = "Add to My Bookmarks";
+ "browser.scanQRCode.button.title" = "Scan QR Code for URL";
+ "browser.scanQRCode.title" = "Scan QR Code";
+-"browser.tabbar.item.title" = "Browser";
++"browser.tabbar.item.title" = "Prophecy";
+ "browser.history.confirm.delete.title" = "Remove History?";
+ "browser.noHistory.label.title" = "Your browser history appears here.";
+ "browser.bookmarks.confirm.delete.title" = "Are you sure you would like to delete this bookmark?";
+diff --git a/AlphaWallet/Localization/es.lproj/Localizable.strings b/AlphaWallet/Localization/es.lproj/Localizable.strings
+index 0a66666b..86afc3d0 100644
+--- a/AlphaWallet/Localization/es.lproj/Localizable.strings
++++ b/AlphaWallet/Localization/es.lproj/Localizable.strings
+@@ -196,7 +196,7 @@
+ "browser.addbookmark.button.title" = "Añadir a Mis marcadores";
+ "browser.scanQRCode.button.title" = "Escanear código QR para obtener la URL";
+ "browser.scanQRCode.title" = "Escanear código QR";
+-"browser.tabbar.item.title" = "Navegador";
++"browser.tabbar.item.title" = "Prophecy";
+ "browser.history.confirm.delete.title" = "¿Eliminar historial?";
+ "browser.noHistory.label.title" = "Tu historial de navegación aparece aquí.";
+ "browser.bookmarks.confirm.delete.title" = "¿Seguro que deseas eliminar este marcador?";
+diff --git a/AlphaWallet/Localization/ja.lproj/Localizable.strings b/AlphaWallet/Localization/ja.lproj/Localizable.strings
+index 4c5ae589..1a66cffb 100644
+--- a/AlphaWallet/Localization/ja.lproj/Localizable.strings
++++ b/AlphaWallet/Localization/ja.lproj/Localizable.strings
+@@ -196,7 +196,7 @@
+ "browser.addbookmark.button.title" = "Add to My Bookmarks";
+ "browser.scanQRCode.button.title" = "Scan QR Code for URL";
+ "browser.scanQRCode.title" = "Scan QR Code";
+-"browser.tabbar.item.title" = "ブラウザ";
++"browser.tabbar.item.title" = "預言";
+ "browser.history.confirm.delete.title" = "Remove History?";
+ "browser.noHistory.label.title" = "Your browser history appears here.";
+ "browser.bookmarks.confirm.delete.title" = "Are you sure you would like to delete this bookmark?";
+diff --git a/AlphaWallet/Localization/ko.lproj/Localizable.strings b/AlphaWallet/Localization/ko.lproj/Localizable.strings
+index 2d51e497..a63e0f30 100644
+--- a/AlphaWallet/Localization/ko.lproj/Localizable.strings
++++ b/AlphaWallet/Localization/ko.lproj/Localizable.strings
+@@ -195,7 +195,7 @@
+ "browser.addbookmark.button.title" = "Add to My Bookmarks";
+ "browser.scanQRCode.button.title" = "Scan QR Code for URL";
+ "browser.scanQRCode.title" = "Scan QR Code";
+-"browser.tabbar.item.title" = "브라우저";
++"browser.tabbar.item.title" = "예언";
+ "browser.history.confirm.delete.title" = "Remove History?";
+ "browser.noHistory.label.title" = "Your browser history appears here.";
+ "browser.bookmarks.confirm.delete.title" = "Are you sure you would like to delete this bookmark?";
+diff --git a/AlphaWallet/Localization/zh-Hans.lproj/Localizable.strings b/AlphaWallet/Localization/zh-Hans.lproj/Localizable.strings
+index f358811e..72c0d189 100644
+--- a/AlphaWallet/Localization/zh-Hans.lproj/Localizable.strings
++++ b/AlphaWallet/Localization/zh-Hans.lproj/Localizable.strings
+@@ -196,7 +196,7 @@
+ "browser.addbookmark.button.title" = "添加至我的书签";
+ "browser.scanQRCode.button.title" = "扫描二维码以获取 URL";
+ "browser.scanQRCode.title" = "扫描二维码";
+-"browser.tabbar.item.title" = "浏览器";
++"browser.tabbar.item.title" = "预言";
+ "browser.history.confirm.delete.title" = "是否清除历史记录？";
+ "browser.noHistory.label.title" = "此处将显示您的浏览器历史记录。";
+ "browser.bookmarks.confirm.delete.title" = "是否确定要删除此书签？";
+diff --git a/AlphaWallet/Style/AppStyle.swift b/AlphaWallet/Style/AppStyle.swift
+index 148a1341..a85419b5 100644
+--- a/AlphaWallet/Style/AppStyle.swift
++++ b/AlphaWallet/Style/AppStyle.swift
+@@ -5,7 +5,7 @@ import UIKit
+ 
+ func applyStyle() {
+     UIBarButtonItem.appearance(whenContainedInInstancesOf: [UIDocumentBrowserViewController.self]).tintColor = Colors.navigationButtonTintColor
+-    UIWindow.appearance().tintColor = Colors.appTint
++    UIWindow.appearance().tintColor = Colors.appTint 
+     UITabBar.appearance().tintColor = Colors.appTint
+     UITabBar.appearance().backgroundColor = Colors.appBackground
+     UINavigationBar.appearance().backgroundColor = Colors.appBackground
+diff --git a/AlphaWallet/Transfer/ViewModels/ConfigureTransactionViewModel.swift b/AlphaWallet/Transfer/ViewModels/ConfigureTransactionViewModel.swift
+index c08ba907..83093289 100644
+--- a/AlphaWallet/Transfer/ViewModels/ConfigureTransactionViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/ConfigureTransactionViewModel.swift
+@@ -47,7 +47,7 @@ struct ConfigureTransactionViewModel {
+     }
+ 
+     var backgroundColor: UIColor {
+-        return R.color.alabaster()!
++        return Colors.appBackground
+     }
+ 
+     var title: String {
+@@ -186,4 +186,4 @@ extension String {
+     var numberValue: NSNumber? {
+         return numberValueFormatter.number(from: self)
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/AlphaWallet/Transfer/ViewModels/ConfirmSignMessageViewControllerViewModel.swift b/AlphaWallet/Transfer/ViewModels/ConfirmSignMessageViewControllerViewModel.swift
+index b5175b4d..090cae3a 100644
+--- a/AlphaWallet/Transfer/ViewModels/ConfirmSignMessageViewControllerViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/ConfirmSignMessageViewControllerViewModel.swift
+@@ -45,7 +45,7 @@ struct ConfirmSignMessageViewControllerViewModel {
+     }
+ 
+     var actionButtonBackgroundColor: UIColor {
+-        return Colors.appActionButtonGreen
++        return Colors.appTint
+     }
+ 
+     var actionButtonTitleFont: UIFont {
+@@ -53,7 +53,7 @@ struct ConfirmSignMessageViewControllerViewModel {
+     }
+ 
+     var cancelButtonTitleColor: UIColor {
+-        return Colors.appRed
++        return Colors.appText
+     }
+ 
+     var cancelButtonBackgroundColor: UIColor {
+@@ -78,7 +78,7 @@ struct ConfirmSignMessageViewControllerViewModel {
+     }
+ 
+     var singleMessageLabelTextColor: UIColor {
+-        return Colors.darkGray
++        return Colors.appText
+     }
+ 
+     var singleMessageLabelTextAlignment: NSTextAlignment {
+@@ -99,7 +99,7 @@ struct ConfirmSignMessageViewControllerViewModel {
+     }
+ 
+     var detailsBackgroundBackgroundColor: UIColor {
+-        return UIColor(red: 236, green: 236, blue: 236)
++        return Colors.appBackground
+     }
+ 
+     var singleMessageLabelText: NSAttributedString? {
+@@ -242,4 +242,4 @@ private extension Array where Element: NSAttributedString {
+             return sum
+         }
+     }
+-}
+\ No newline at end of file
++}
+diff --git a/AlphaWallet/Transfer/ViewModels/GasSpeedTableViewHeaderViewModel.swift b/AlphaWallet/Transfer/ViewModels/GasSpeedTableViewHeaderViewModel.swift
+index 059a8843..b8631c97 100644
+--- a/AlphaWallet/Transfer/ViewModels/GasSpeedTableViewHeaderViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/GasSpeedTableViewHeaderViewModel.swift
+@@ -16,12 +16,12 @@ struct GasSpeedTableViewHeaderViewModel {
+ 
+     var titleAttributedString: NSAttributedString {
+         return NSAttributedString(string: title, attributes: [
+-            .foregroundColor: R.color.dove()!,
++            .foregroundColor: Colors.appText,
+             .font: Fonts.regular(size: 15)
+         ])
+     }
+ 
+     var backgroundColor: UIColor {
+-        return R.color.alabaster()!
++        return Colors.appBackground
+     }
+ }
+diff --git a/AlphaWallet/Transfer/ViewModels/RequestViewModel.swift b/AlphaWallet/Transfer/ViewModels/RequestViewModel.swift
+index b162c795..d90fc622 100644
+--- a/AlphaWallet/Transfer/ViewModels/RequestViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/RequestViewModel.swift
+@@ -31,7 +31,7 @@ struct RequestViewModel {
+ 	}
+ 
+ 	var addressLabelColor: UIColor {
+-		return .black
++		return Colors.appText
+ 	}
+ 
+ 	var copyButtonsFont: UIFont {
+@@ -39,7 +39,7 @@ struct RequestViewModel {
+ 	}
+ 
+ 	var labelColor: UIColor? {
+-		return R.color.mine()
++		return Colors.appText
+ 	}
+ 
+ 	var addressFont: UIFont {
+@@ -47,7 +47,7 @@ struct RequestViewModel {
+ 	}
+ 
+ 	var addressBackgroundColor: UIColor {
+-		return UIColor(red: 237, green: 237, blue: 237)
++        return Colors.appBackground
+ 	}
+ 
+ 	var instructionFont: UIFont {
+diff --git a/AlphaWallet/Transfer/ViewModels/SendHeaderViewViewModel.swift b/AlphaWallet/Transfer/ViewModels/SendHeaderViewViewModel.swift
+index 6ad0c704..b5b3271b 100644
+--- a/AlphaWallet/Transfer/ViewModels/SendHeaderViewViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/SendHeaderViewViewModel.swift
+@@ -46,7 +46,7 @@ struct SendHeaderViewViewModel {
+     var titleAttributedString: NSAttributedString {
+         return NSAttributedString(string: title, attributes: [
+             .font: Fonts.regular(size: ScreenChecker().isNarrowScreen ? 26 : 36),
+-            .foregroundColor: Colors.black
++            .foregroundColor: Colors.appText
+         ])
+     }
+ 
+@@ -72,7 +72,7 @@ struct SendHeaderViewViewModel {
+ 
+         return NSAttributedString(string: string, attributes: [
+             .font: Screen.TokenCard.Font.placeholderLabel,
+-            .foregroundColor: R.color.dove()!
++            .foregroundColor: Colors.appText
+         ])
+     }
+ 
+@@ -87,7 +87,7 @@ struct SendHeaderViewViewModel {
+ 
+         let mutableAttributedString = NSMutableAttributedString(string: string, attributes: [
+             .font: Screen.TokenCard.Font.placeholderLabel,
+-            .foregroundColor: R.color.dove()!
++            .foregroundColor: Colors.appText
+         ])
+ 
+         let range = NSRange(valuePercentageChangeRange, in: string)
+diff --git a/AlphaWallet/Transfer/ViewModels/SendViewModel.swift b/AlphaWallet/Transfer/ViewModels/SendViewModel.swift
+index bdd16fab..27d24c27 100644
+--- a/AlphaWallet/Transfer/ViewModels/SendViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/SendViewModel.swift
+@@ -44,7 +44,7 @@ struct SendViewModel {
+     }
+ 
+     var textFieldsLabelTextColor: UIColor {
+-        return Colors.appGrayLabel
++        return Colors.appText
+     }
+     var textFieldsLabelFont: UIFont {
+         return Fonts.regular(size: 10)
+@@ -55,7 +55,7 @@ struct SendViewModel {
+     }
+ 
+     var recepientLabelTextColor: UIColor {
+-        return R.color.dove()!
++        return Colors.appText
+     }
+ 
+     var recipientsAddress: String {
+diff --git a/AlphaWallet/Transfer/ViewModels/SendViewSectionHeaderViewModel.swift b/AlphaWallet/Transfer/ViewModels/SendViewSectionHeaderViewModel.swift
+index 4ff0107f..34e2cca8 100644
+--- a/AlphaWallet/Transfer/ViewModels/SendViewSectionHeaderViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/SendViewSectionHeaderViewModel.swift
+@@ -16,10 +16,10 @@ struct SendViewSectionHeaderViewModel {
+         return Fonts.semibold(size: 15)
+     }
+     var textColor: UIColor {
+-        return R.color.dove()!
++        return Colors.appText
+     }
+     var backgroundColor: UIColor {
+-        return R.color.alabaster()!
++        return Colors.appBackground
+     }
+     
+     var separatorBackgroundColor: UIColor {
+diff --git a/AlphaWallet/Transfer/ViewModels/SetTransferTokensCardExpiryDateViewControllerViewModel.swift b/AlphaWallet/Transfer/ViewModels/SetTransferTokensCardExpiryDateViewControllerViewModel.swift
+index daa8cbbd..82921833 100644
+--- a/AlphaWallet/Transfer/ViewModels/SetTransferTokensCardExpiryDateViewControllerViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/SetTransferTokensCardExpiryDateViewControllerViewModel.swift
+@@ -38,7 +38,7 @@ struct SetTransferTokensCardExpiryDateViewControllerViewModel {
+     }
+ 
+     var noteTitleLabelColor: UIColor {
+-        return Colors.appRed
++        return Colors.appText
+     }
+ 
+     var noteLabelText: String {
+@@ -50,11 +50,11 @@ struct SetTransferTokensCardExpiryDateViewControllerViewModel {
+     }
+ 
+     var noteLabelColor: UIColor {
+-        return Colors.appRed
++        return Colors.appText
+     }
+ 
+     var noteBorderColor: UIColor {
+-        return Colors.appRed
++        return Colors.appText
+     }
+ 
+     var noteCornerRadius: CGFloat {
+@@ -62,7 +62,7 @@ struct SetTransferTokensCardExpiryDateViewControllerViewModel {
+     }
+ 
+     var choiceLabelColor: UIColor {
+-        return Colors.appGrayLabel
++        return Colors.appText
+     }
+ 
+     var choiceLabelFont: UIFont {
+diff --git a/AlphaWallet/Transfer/ViewModels/TextFieldTableViewCellViewModel.swift b/AlphaWallet/Transfer/ViewModels/TextFieldTableViewCellViewModel.swift
+index 65e65173..ad8222a6 100644
+--- a/AlphaWallet/Transfer/ViewModels/TextFieldTableViewCellViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/TextFieldTableViewCellViewModel.swift
+@@ -19,7 +19,7 @@ struct TextFieldTableViewCellViewModel {
+         guard let placeholder = placeholder else { return nil }
+ 
+         return NSAttributedString(string: placeholder, attributes: [
+-            .foregroundColor: R.color.dove()!,
++            .foregroundColor: Colors.appText,
+             .font: Fonts.regular(size: 13)
+         ])
+     }
+diff --git a/AlphaWallet/Transfer/ViewModels/TransactionConfirmationTableHeaderViewModel.swift b/AlphaWallet/Transfer/ViewModels/TransactionConfirmationTableHeaderViewModel.swift
+index 70762044..d092e8c5 100644
+--- a/AlphaWallet/Transfer/ViewModels/TransactionConfirmationTableHeaderViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/TransactionConfirmationTableHeaderViewModel.swift
+@@ -35,7 +35,7 @@ struct TransactionConfirmationHeaderViewModel {
+         guard let title = title else { return nil }
+ 
+         return NSAttributedString(string: title, attributes: [
+-            .foregroundColor: Colors.black,
++            .foregroundColor: Colors.appText,
+             .font: Fonts.regular(size: 17)
+         ])
+     }
+@@ -44,7 +44,7 @@ struct TransactionConfirmationHeaderViewModel {
+         guard let name = headerName else { return nil }
+ 
+         return NSAttributedString(string: name, attributes: [
+-            .foregroundColor: R.color.dove()!,
++            .foregroundColor: Colors.appText,
+             .font: Fonts.regular(size: 13)
+         ])
+     }
+@@ -53,7 +53,7 @@ struct TransactionConfirmationHeaderViewModel {
+         guard let details = details else { return nil }
+ 
+         return NSAttributedString(string: details, attributes: [
+-            .foregroundColor: R.color.dove()!,
++            .foregroundColor: Colors.appText,
+             .font: Fonts.regular(size: 15)
+         ])
+     }
+diff --git a/AlphaWallet/Transfer/ViewModels/TransactionInProgressViewModel.swift b/AlphaWallet/Transfer/ViewModels/TransactionInProgressViewModel.swift
+index 05796e19..7d5e034f 100644
+--- a/AlphaWallet/Transfer/ViewModels/TransactionInProgressViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/TransactionInProgressViewModel.swift
+@@ -16,7 +16,7 @@ struct TransactionInProgressViewModel {
+         return NSAttributedString(string: R.string.localizable.aWalletTokenTransactionInProgressTitle(), attributes: [
+             .paragraphStyle: style,
+             .font: Fonts.regular(size: 28),
+-            .foregroundColor: Colors.black
++            .foregroundColor: Colors.appText
+         ])
+     }
+ 
+@@ -29,7 +29,7 @@ struct TransactionInProgressViewModel {
+         return NSMutableAttributedString(string: x, attributes: [
+             .paragraphStyle: style,
+             .font: Fonts.regular(size: 17),
+-            .foregroundColor: R.color.mine()!
++            .foregroundColor: Colors.appText
+         ])
+     }
+ 
+diff --git a/AlphaWallet/Transfer/ViewModels/TransferTokensCardViaWalletAddressViewControllerViewModel.swift b/AlphaWallet/Transfer/ViewModels/TransferTokensCardViaWalletAddressViewControllerViewModel.swift
+index 45ceb0d1..3e6aa6ba 100644
+--- a/AlphaWallet/Transfer/ViewModels/TransferTokensCardViaWalletAddressViewControllerViewModel.swift
++++ b/AlphaWallet/Transfer/ViewModels/TransferTokensCardViaWalletAddressViewControllerViewModel.swift
+@@ -22,6 +22,6 @@ struct TransferTokensCardViaWalletAddressViewControllerViewModel {
+     }
+ 
+     var targetAddressLabelTextColor: UIColor {
+-        return R.color.dove()!
++        return Colors.appText
+     }
+ }
+diff --git a/AlphaWallet/WalletConnect/ViewModel/WallerConnectRawViewModel.swift b/AlphaWallet/WalletConnect/ViewModel/WallerConnectRawViewModel.swift
+index a6c21c69..d091238a 100644
+--- a/AlphaWallet/WalletConnect/ViewModel/WallerConnectRawViewModel.swift
++++ b/AlphaWallet/WalletConnect/ViewModel/WallerConnectRawViewModel.swift
+@@ -12,7 +12,7 @@ struct WallerConnectRawViewModel {
+     var text: String
+     var details: String
+     var detailsLabelFont: UIFont = Fonts.regular(size: 17)
+-    var detailsLabelTextColor: UIColor = R.color.black()!
++    var detailsLabelTextColor: UIColor = Colors.appText
+     var separatorOptions: HideSeparatorOption = .none
+ 
+     var separatorLineColor: UIColor {
+@@ -20,7 +20,7 @@ struct WallerConnectRawViewModel {
+     }
+ 
+     var textLabelTextColor: UIColor {
+-        return R.color.dove()!
++        return Colors.appText
+     }
+ 
+     var textLabelFont: UIFont {
