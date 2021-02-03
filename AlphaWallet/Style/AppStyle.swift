@@ -13,7 +13,7 @@ func applyStyle() {
     UINavigationBar.appearance().backIndicatorImage = R.image.backWhite()
     UINavigationBar.appearance().backIndicatorTransitionMaskImage = R.image.backWhite()
     UINavigationBar.appearance().titleTextAttributes = [
-        .foregroundColor: Colors.appBackground,
+        .foregroundColor: Colors.appWhite,
         .font: Fonts.semibold(size: 17) as Any
     ]
     UINavigationBar.appearance().largeTitleTextAttributes = [

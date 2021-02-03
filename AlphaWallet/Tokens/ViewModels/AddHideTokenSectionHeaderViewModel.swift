@@ -13,5 +13,9 @@ struct AddHideTokenSectionHeaderViewModel {
     var separatorColor: UIColor {
         GroupedTable.Color.cellSeparator
     }
+    
+    var backgroundColor: UIColor {
+        return Colors.appBackground
+    }
 
 }

@@ -72,5 +72,7 @@ class AddHideTokenSectionHeaderView: UITableViewHeaderFooterView {
     func configure(viewModel: AddHideTokenSectionHeaderViewModel) {
         titleLabel.text = viewModel.text
         separatorView.backgroundColor = viewModel.separatorColor
+        backgroundColor = viewModel.backgroundColor
+        tintColor = viewModel.backgroundColor
     }
 }
