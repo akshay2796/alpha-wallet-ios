@@ -38,7 +38,7 @@ struct SegmentedControlViewModel {
 	}
 
 	private var unselectedTitleColor: UIColor {
-		return R.color.dove()!
+		return Colors.appText
 	}
 
 	private var selectedTitleColor: UIColor {

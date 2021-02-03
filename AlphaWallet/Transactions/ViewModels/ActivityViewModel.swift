@@ -19,7 +19,7 @@ struct ActivityViewModel {
     }
 
     var titleTextColor: UIColor {
-        R.color.black()!
+        Colors.appText
     }
 
     var titleFont: UIFont {
@@ -93,7 +93,7 @@ struct ActivityViewModel {
     }
 
     var subTitleTextColor: UIColor {
-        R.color.dove()!
+        Colors.appText
     }
 
     var subTitleFont: UIFont {
@@ -105,7 +105,7 @@ struct ActivityViewModel {
     }
 
     var timestampColor: UIColor {
-        R.color.dove()!
+        Colors.appText
     }
 
     var timestamp: String {

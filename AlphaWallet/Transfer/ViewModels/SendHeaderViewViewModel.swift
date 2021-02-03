@@ -46,7 +46,7 @@ struct SendHeaderViewViewModel {
     var titleAttributedString: NSAttributedString {
         return NSAttributedString(string: title, attributes: [
             .font: Fonts.regular(size: ScreenChecker().isNarrowScreen ? 26 : 36),
-            .foregroundColor: Colors.black
+            .foregroundColor: Colors.appText
         ])
     }
 
@@ -72,7 +72,7 @@ struct SendHeaderViewViewModel {
 
         return NSAttributedString(string: string, attributes: [
             .font: Screen.TokenCard.Font.placeholderLabel,
-            .foregroundColor: R.color.dove()!
+            .foregroundColor: Colors.appText
         ])
     }
 
@@ -87,7 +87,7 @@ struct SendHeaderViewViewModel {
 
         let mutableAttributedString = NSMutableAttributedString(string: string, attributes: [
             .font: Screen.TokenCard.Font.placeholderLabel,
-            .foregroundColor: R.color.dove()!
+            .foregroundColor: Colors.appText
         ])
 
         let range = NSRange(valuePercentageChangeRange, in: string)

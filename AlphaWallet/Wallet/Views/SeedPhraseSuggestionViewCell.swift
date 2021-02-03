@@ -17,7 +17,7 @@ class SeedPhraseSuggestionViewCell: UICollectionViewCell {
     let textLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = R.color.mine()
+        label.textColor = Colors.appText
         return label
     }()
 

@@ -16,7 +16,7 @@ struct TransactionAppearance {
         subTitleLabel.translatesAutoresizingMaskIntoConstraints = false
         subTitleLabel.text = subTitle
         subTitleLabel.textAlignment = .left
-        subTitleLabel.textColor = Colors.black
+        subTitleLabel.textColor = Colors.appText
         subTitleLabel.font = Fonts.light(size: 15)
         subTitleLabel.numberOfLines = 0
 

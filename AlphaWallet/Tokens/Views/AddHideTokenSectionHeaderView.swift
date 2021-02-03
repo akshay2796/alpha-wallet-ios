@@ -7,7 +7,7 @@ class AddHideTokenSectionHeaderView: UITableViewHeaderFooterView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = Fonts.bold(size: 24)
-        label.textColor = .black
+        label.textColor = Colors.appText
         
         return label
     }()

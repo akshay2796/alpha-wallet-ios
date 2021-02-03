@@ -19,7 +19,7 @@ struct TextFieldTableViewCellViewModel {
         guard let placeholder = placeholder else { return nil }
 
         return NSAttributedString(string: placeholder, attributes: [
-            .foregroundColor: R.color.dove()!,
+            .foregroundColor: Colors.appText,
             .font: Fonts.regular(size: 13)
         ])
     }

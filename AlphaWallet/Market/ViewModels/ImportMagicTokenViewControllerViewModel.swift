@@ -199,7 +199,7 @@ struct ImportMagicTokenViewControllerViewModel {
 
     var statusColor: UIColor {
         if case .failed = state {
-            return Colors.appRed
+            return Colors.appTint
         } else {
             return UIColor(red: 20, green: 20, blue: 20)
         }

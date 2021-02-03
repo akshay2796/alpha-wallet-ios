@@ -23,7 +23,7 @@ struct ActiveWalletSessionViewModel {
         return .init(string: "WalletConnect", attributes: [
             .paragraphStyle: style,
             .font: Fonts.regular(size: ScreenChecker().isNarrowScreen ? 18 : 20) as Any,
-            .foregroundColor: Colors.black
+            .foregroundColor: Colors.appText
         ])
     }
 

@@ -122,7 +122,7 @@ func createTokenScriptFileStatusButton(withStatus status: TokenLevelTokenScriptD
             title = message
         }
         image = R.image.unverified()
-        tintColor = Colors.appRed
+        tintColor = Colors.appTint
     }
     button.setTitle(title, for: .normal)
     button.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)

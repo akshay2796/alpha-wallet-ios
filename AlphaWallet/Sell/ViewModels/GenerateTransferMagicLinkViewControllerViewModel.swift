@@ -34,7 +34,7 @@ struct GenerateTransferMagicLinkViewControllerViewModel {
         return Fonts.regular(size: 20)
     }
     var cancelButtonTitleColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
     var cancelButtonBackgroundColor: UIColor {
         return .clear

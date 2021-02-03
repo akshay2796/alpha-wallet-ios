@@ -16,10 +16,10 @@ struct SendViewSectionHeaderViewModel {
         return Fonts.semibold(size: 15)
     }
     var textColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
     var backgroundColor: UIColor {
-        return R.color.alabaster()!
+        return Colors.appBackground
     }
     
     var separatorBackgroundColor: UIColor {

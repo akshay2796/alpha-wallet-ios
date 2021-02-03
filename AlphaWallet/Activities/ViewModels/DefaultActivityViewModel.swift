@@ -65,9 +65,9 @@ struct DefaultActivityViewModel {
 
         switch activity.state {
         case .pending:
-            return NSAttributedString(string: string, attributes: [.font: Fonts.regular(size: 28), .foregroundColor: R.color.black()!])
+            return NSAttributedString(string: string, attributes: [.font: Fonts.regular(size: 28), .foregroundColor: Colors.appText])
         case .completed:
-            return NSAttributedString(string: string, attributes: [.font: Fonts.regular(size: 28), .foregroundColor: R.color.black()!])
+            return NSAttributedString(string: string, attributes: [.font: Fonts.regular(size: 28), .foregroundColor: Colors.appText])
         case .failed:
             return NSAttributedString(string: string, attributes: [.font: Fonts.regular(size: 28), .foregroundColor: R.color.silver()!, .strikethroughStyle: NSUnderlineStyle.single.rawValue])
         }

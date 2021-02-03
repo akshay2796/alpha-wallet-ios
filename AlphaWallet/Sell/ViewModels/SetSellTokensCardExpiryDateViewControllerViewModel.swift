@@ -85,7 +85,7 @@ struct SetSellTokensCardExpiryDateViewControllerViewModel {
     }
 
     var noteTitleLabelColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteLabelText: String {
@@ -98,11 +98,11 @@ struct SetSellTokensCardExpiryDateViewControllerViewModel {
     }
 
     var noteLabelColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteBorderColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteCornerRadius: CGFloat {

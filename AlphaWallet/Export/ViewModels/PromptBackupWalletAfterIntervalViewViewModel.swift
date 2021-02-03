@@ -19,6 +19,6 @@ struct PromptBackupWalletAfterIntervalViewViewModel: PromptBackupWalletViewModel
     }
 
     var backupButtonBackgroundColor: UIColor {
-        return UIColor(red: 65, green: 71, blue: 89)
+        return Colors.appTint
     }
 }

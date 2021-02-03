@@ -95,12 +95,12 @@ final class DappBrowserNavigationBar: UINavigationBar {
 
         domainNameLabel.isHidden = true
 
-        moreButton.tintColor = Colors.black
+        moreButton.tintColor = Colors.appText
         moreButton.adjustsImageWhenHighlighted = true
         moreButton.setImage(R.image.toolbarMenu(), for: .normal)
         moreButton.addTarget(self, action: #selector(moreAction), for: .touchUpInside)
 
-        closeButton.tintColor = Colors.black
+        closeButton.tintColor = Colors.appText
         closeButton.isHidden = true
         closeButton.setTitle(R.string.localizable.done(), for: .normal)
         closeButton.setTitleColor(Colors.navigationButtonTintColor, for: .normal)
@@ -110,12 +110,12 @@ final class DappBrowserNavigationBar: UINavigationBar {
 
         changeServerButton.addTarget(self, action: #selector(changeServerAction), for: .touchUpInside)
 
-        backButton.tintColor = Colors.black
+        backButton.tintColor = Colors.appText
         backButton.adjustsImageWhenHighlighted = true
         backButton.setImage(R.image.toolbarBack(), for: .normal)
         backButton.addTarget(self, action: #selector(goBackAction), for: .touchUpInside)
 
-        forwardButton.tintColor = Colors.black
+        forwardButton.tintColor = Colors.appText
         forwardButton.adjustsImageWhenHighlighted = true
         forwardButton.setImage(R.image.toolbarForward(), for: .normal)
         forwardButton.addTarget(self, action: #selector(goForwardAction), for: .touchUpInside)

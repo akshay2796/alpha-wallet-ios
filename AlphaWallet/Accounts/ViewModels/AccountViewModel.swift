@@ -56,7 +56,7 @@ struct AccountViewModel {
     }
 
     var addressTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
 
     var addresses: String {

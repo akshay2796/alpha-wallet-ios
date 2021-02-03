@@ -22,6 +22,6 @@ struct TransferTokensCardViaWalletAddressViewControllerViewModel {
     }
 
     var targetAddressLabelTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
 }

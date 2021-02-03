@@ -67,7 +67,7 @@ struct AppFormAppearance {
         let button = ButtonRow(title)
         .cellUpdate { cell, _ in
             cell.textLabel?.textAlignment = .left
-            cell.textLabel?.textColor = .black
+            cell.textLabel?.textColor = Colors.appText
         }
         callback(button)
         return button

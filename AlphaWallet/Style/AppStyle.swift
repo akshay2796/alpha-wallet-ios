@@ -272,7 +272,7 @@ enum Screen {
                 case .appreciate:
                     return Colors.appHighlightGreen
                 case .depreciate:
-                    return Colors.appRed
+                    return Colors.appTint
                 case .none:
                     return Colors.appGrayLabel
                 }

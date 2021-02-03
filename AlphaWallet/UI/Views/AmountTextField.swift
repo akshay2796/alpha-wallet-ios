@@ -33,7 +33,7 @@ class AmountTextField: UIControl {
             case .error:
                 return DataEntry.Color.textFieldStatus!
             case .none:
-                return R.color.black()!
+                return Colors.appText
             }
         }
 
@@ -42,7 +42,7 @@ class AmountTextField: UIControl {
             case .error:
                 return DataEntry.Color.textFieldStatus!
             case .none:
-                return R.color.dove()!
+                return Colors.appText
             }
         }
 
@@ -60,7 +60,7 @@ class AmountTextField: UIControl {
             case .error:
                 return DataEntry.Color.textFieldStatus!
             case .none:
-                return R.color.black()!
+                return Colors.appText
             }
         }
 
@@ -121,7 +121,7 @@ class AmountTextField: UIControl {
         textField.keyboardType = .decimalPad
         textField.leftViewMode = .always
         textField.inputAccessoryView = UIToolbar.doneToolbarButton(#selector(closeKeyboard), self)
-        textField.textColor = R.color.black()!
+        textField.textColor = Colors.appText
         textField.font = DataEntry.Font.amountTextField
         textField.textAlignment = .right
 
@@ -131,7 +131,7 @@ class AmountTextField: UIControl {
     private lazy var inputAccessoryButton: UIButton = {
         let button = UIButton()
         button.setTitle(accessoryButtonTitle.buttonTitle, for: .normal)
-        button.setTitleColor(R.color.black(), for: .normal)
+        button.setTitleColor(Colors.appText, for: .normal)
 
         return button
     }()

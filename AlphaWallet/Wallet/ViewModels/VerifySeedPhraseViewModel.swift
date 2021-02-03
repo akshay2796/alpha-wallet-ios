@@ -17,7 +17,7 @@ struct VerifySeedPhraseViewModel {
     }
 
     var seedPhraseTextViewBorderErrorColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var seedPhraseTextViewBorderWidth: CGFloat {
@@ -37,7 +37,7 @@ struct VerifySeedPhraseViewModel {
     }
 
     var errorColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     //Make it the same as the background. Trick to maintain the height of the error label even when there's no error by putting some dummy text. The dummy text must still make sense for accessibility

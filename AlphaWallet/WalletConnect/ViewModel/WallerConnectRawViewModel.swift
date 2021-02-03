@@ -12,7 +12,7 @@ struct WallerConnectRawViewModel {
     var text: String
     var details: String
     var detailsLabelFont: UIFont = Fonts.regular(size: 17)
-    var detailsLabelTextColor: UIColor = R.color.black()!
+    var detailsLabelTextColor: UIColor = Colors.appText
     var separatorOptions: HideSeparatorOption = .none
 
     var separatorLineColor: UIColor {
@@ -20,7 +20,7 @@ struct WallerConnectRawViewModel {
     }
 
     var textLabelTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
 
     var textLabelFont: UIFont {

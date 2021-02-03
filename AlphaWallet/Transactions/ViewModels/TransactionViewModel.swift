@@ -40,7 +40,7 @@ struct TransactionViewModel {
     var amountTextColor: UIColor {
         switch direction {
         case .incoming: return Colors.appHighlightGreen
-        case .outgoing: return Colors.appRed
+        case .outgoing: return Colors.appTint
         }
     }
 

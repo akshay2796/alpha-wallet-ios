@@ -28,6 +28,7 @@ class EnabledServersViewController: UIViewController {
         tableView.delegate = self
         tableView.separatorStyle = .singleLine
         tableView.backgroundColor = GroupedTable.Color.background
+        tableView.tintColor = Colors.appText
         tableView.tableFooterView = UIView.tableFooterToRemoveEmptyCellSeparators()
         tableView.register(ServerViewCell.self)
         roundedBackground.addSubview(tableView)

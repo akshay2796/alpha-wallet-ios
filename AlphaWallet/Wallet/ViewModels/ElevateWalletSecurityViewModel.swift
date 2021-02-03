@@ -47,7 +47,7 @@ struct ElevateWalletSecurityViewModel {
         attributeString.addAttributes([
             .paragraphStyle: style,
             .font: Screen.Backup.subtitleFont,
-            .foregroundColor: R.color.black()!
+            .foregroundColor: Colors.appText
         ], range: NSRange(location: 0, length: subtitle.count))
 
         return attributeString
@@ -81,6 +81,6 @@ struct ElevateWalletSecurityViewModel {
     }
 
     var cancelLockingButtonTitleColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 }

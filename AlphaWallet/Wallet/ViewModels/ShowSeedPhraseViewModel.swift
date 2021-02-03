@@ -25,7 +25,7 @@ struct ShowSeedPhraseViewModel {
     }
 
     var errorColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var errorFont: UIFont {

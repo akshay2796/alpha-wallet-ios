@@ -102,7 +102,7 @@ struct DefaultActivityCellViewModel {
     }
 
     var subTitleTextColor: UIColor {
-        R.color.dove()!
+        Colors.appText
     }
 
     var subTitleFont: UIFont {
@@ -154,9 +154,9 @@ struct DefaultActivityCellViewModel {
 
         switch activity.state {
         case .pending:
-            return NSAttributedString(string: string, attributes: [.font: Fonts.semibold(size: 17), .foregroundColor: R.color.black()!])
+            return NSAttributedString(string: string, attributes: [.font: Fonts.semibold(size: 17), .foregroundColor: Colors.appText])
         case .completed:
-            return NSAttributedString(string: string, attributes: [.font: Fonts.semibold(size: 17), .foregroundColor: R.color.black()!])
+            return NSAttributedString(string: string, attributes: [.font: Fonts.semibold(size: 17), .foregroundColor: Colors.appText])
         case .failed:
             return NSAttributedString(string: string, attributes: [.font: Fonts.semibold(size: 17), .foregroundColor: R.color.silver()!, .strikethroughStyle: NSUnderlineStyle.single.rawValue])
         }
@@ -167,7 +167,7 @@ struct DefaultActivityCellViewModel {
     }
 
     var timestampColor: UIColor {
-        R.color.dove()!
+        Colors.appText
     }
 
     var timestamp: String {

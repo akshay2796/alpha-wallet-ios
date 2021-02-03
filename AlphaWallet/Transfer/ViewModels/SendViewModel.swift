@@ -55,7 +55,7 @@ struct SendViewModel {
     }
 
     var recepientLabelTextColor: UIColor {
-        return R.color.dove()!
+        return Colors.appText
     }
 
     var recipientsAddress: String {

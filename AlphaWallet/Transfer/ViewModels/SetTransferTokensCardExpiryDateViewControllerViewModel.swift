@@ -38,7 +38,7 @@ struct SetTransferTokensCardExpiryDateViewControllerViewModel {
     }
 
     var noteTitleLabelColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteLabelText: String {
@@ -50,11 +50,11 @@ struct SetTransferTokensCardExpiryDateViewControllerViewModel {
     }
 
     var noteLabelColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteBorderColor: UIColor {
-        return Colors.appRed
+        return Colors.appTint
     }
 
     var noteCornerRadius: CGFloat {
