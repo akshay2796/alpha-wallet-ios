@@ -27,5 +27,6 @@ class WalletConnectSessionCell: UITableViewCell {
         backgroundColor = Colors.appBackground
         nameLabel.font = viewModel.nameFont
         nameLabel.text = viewModel.name
+        nameLabel.textColor = Colors.appText
     }
 }

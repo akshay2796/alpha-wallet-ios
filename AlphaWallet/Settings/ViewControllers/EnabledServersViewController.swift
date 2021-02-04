@@ -28,7 +28,7 @@ class EnabledServersViewController: UIViewController {
         tableView.delegate = self
         tableView.separatorStyle = .singleLine
         tableView.backgroundColor = GroupedTable.Color.background
-        tableView.tintColor = Colors.appText
+        tableView.tintColor = Colors.appTint
         tableView.tableFooterView = UIView.tableFooterToRemoveEmptyCellSeparators()
         tableView.register(ServerViewCell.self)
         roundedBackground.addSubview(tableView)
@@ -74,6 +74,10 @@ extension EnabledServersViewController: UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ServerViewCell = tableView.dequeueReusableCell(for: indexPath)
+        cell.textLabel?.textColor = Colors.appText
+        cell.detailTextLabel?.textColor = Colors.appText
+        cell.textLabel?.tintColor = Colors.appTint
+        cell.detailTextLabel?.tintColor = Colors.appTint
         if let viewModel = viewModel {
             let server = viewModel.server(for: indexPath)
             let cellViewModel = ServerViewModel(server: server, selected: viewModel.isServerSelected(server))

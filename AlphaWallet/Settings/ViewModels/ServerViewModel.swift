@@ -36,4 +36,8 @@ struct ServerViewModel {
     var serverName: String {
         return server.displayName
     }
+    
+    var textColor: UIColor {
+        return Colors.appText
+    }
 }

@@ -9,7 +9,7 @@ class ServerViewCell: UITableViewCell {
 
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
+        nameLabel.textColor = Colors.appText
         let stackView = [.spacerWidth(Table.Metric.plainLeftMargin), nameLabel].asStackView(axis: .horizontal)
         stackView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(stackView)
